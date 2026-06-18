@@ -6,13 +6,13 @@
     <!-- ========== PRIMARY SEO META ========== -->
     <title>Free Image Resizer: Resize Photos, Reduce Image Size Online</title>
     <meta name="description" content="Resize images online free. Use our image resizer to change photo size, reduce image file size, resize for Instagram, passport, YouTube thumbnails, and more. Fast, private, browser-based tool.">
-    <link rel="canonical" href="https://your-github-username.github.io/image-resizer/">
+    <link rel="canonical" href="https://studentinlifeonceandalways-afk.github.io/image_resizer/">
     <!-- ========== OPEN GRAPH ========== -->
     <meta property="og:title" content="Free Image Resizer: Resize Photos & Reduce Image Size Online">
     <meta property="og:description" content="Resize images online free. Change photo size, reduce file size, resize for Instagram, passport, YouTube thumbnails. 100% private.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-github-username.github.io/image-resizer/">
-    <meta property="og:image" content="https://your-github-username.github.io/image-resizer/og-image.jpg">
+    <meta property="og:url" content="https://studentinlifeonceandalways-afk.github.io/image_resizer/">
+    <meta property="og:image" content="https://studentinlifeonceandalways-afk.github.io/image_resizer/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- ========== TWITTER CARD ========== -->
@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="Resize images online free. Change photo size, reduce file size, resize for Instagram, passport, YouTube thumbnails.">
     <!-- ========== FONT AWESOME ========== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- ========== STRUCTURED DATA: WebApplication + FAQ + Breadcrumb ========== -->
+    <!-- ========== STRUCTURED DATA ========== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -108,13 +108,13 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://your-github-username.github.io/"
+          "item": "https://studentinlifeonceandalways-afk.github.io/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Image Resizer",
-          "item": "https://your-github-username.github.io/image-resizer/"
+          "item": "https://studentinlifeonceandalways-afk.github.io/image_resizer/"
         }
       ]
     }
@@ -123,9 +123,41 @@
         /* ===== RESET & BASE ===== */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
         body { background: #f6f9fc; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 1.5rem; }
-        .card { max-width: 820px; width: 100%; background: white; border-radius: 2.5rem; padding: 2.2rem 2rem; box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.20); }
+        .card { max-width: 820px; width: 100%; background: white; border-radius: 2.5rem; padding: 2.2rem 2rem; box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.20); position: relative; }
+        /* ===== LIVE COUNTER ===== */
+        .live-counter {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.5rem;
+            background: #e8f5e9;
+            color: #1e5a3a;
+            padding: 0.3rem 1rem 0.3rem 0.8rem;
+            border-radius: 3rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            border: 1px solid #a5d6a7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            z-index: 10;
+        }
+        .live-counter i {
+            color: #2e7d32;
+            font-size: 0.7rem;
+            animation: pulse-dot 1.5s ease-in-out infinite;
+        }
+        .live-counter .count {
+            min-width: 1.8rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.7); }
+        }
         /* ===== HEADER ===== */
-        h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; color: #0b1e2b; display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.1rem; }
+        h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; color: #0b1e2b; display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.1rem; padding-right: 110px; }
         h1 i { color: #2b7be4; font-size: 2rem; }
         .subhead { color: #1f4a66; margin-bottom: 1.8rem; border-left: 4px solid #2b7be4; padding-left: 1rem; font-weight: 400; font-size: 0.95rem; background: #f1f8fe; padding: 0.6rem 1rem; border-radius: 2rem; display: inline-block; }
         .subhead i { margin-right: 0.5rem; color: #2b7be4; }
@@ -166,7 +198,7 @@
         .btn i { font-size: 1rem; }
         .download-area { margin: 1.5rem 0 0.2rem; display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; justify-content: center; }
         .download-area .btn { flex: 1 1 140px; }
-        /* ===== SEO CONTENT SECTIONS ===== */
+        /* ===== SEO CONTENT ===== */
         .seo-content { margin-top: 2.5rem; padding-top: 1.8rem; border-top: 2px solid #e2edf7; }
         .seo-content h2 { font-size: 1.5rem; color: #0b1e2b; margin: 1.2rem 0 0.6rem; }
         .seo-content h3 { font-size: 1.1rem; color: #1f4a66; margin: 1rem 0 0.4rem; }
@@ -184,13 +216,31 @@
         hr { border: none; border-top: 1px solid #d9e7f2; margin: 1rem 0 0.8rem; }
         .footer-note { text-align: center; font-size: 0.8rem; color: #517a94; margin-top: 1.5rem; }
         .footer-note a { color: #1f5f9e; text-decoration: none; }
-        @media (max-width: 500px) { .card { padding: 1.5rem 1rem; } .resize-controls { flex-direction: column; align-items: stretch; } .control-group { flex: 1 1 auto; } .lock-aspect { align-self: flex-start; } }
+        @media (max-width: 500px) {
+            .card { padding: 1.5rem 1rem; }
+            .resize-controls { flex-direction: column; align-items: stretch; }
+            .control-group { flex: 1 1 auto; }
+            .lock-aspect { align-self: flex-start; }
+            .live-counter { position: relative; top: auto; right: auto; margin-bottom: 1rem; display: inline-flex; }
+            h1 { padding-right: 0; flex-wrap: wrap; }
+            .header-top { display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+        }
     </style>
 </head>
 <body>
 <div class="card" role="main">
+    <!-- ===== LIVE USER COUNTER ===== -->
+    <div class="live-counter" id="liveCounter">
+        <i class="fas fa-circle"></i>
+        <span>Live:</span>
+        <span class="count" id="userCount">1</span>
+        <span>online</span>
+    </div>
+
     <!-- ===== HEADER ===== -->
-    <h1><i class="fas fa-arrows-alt-h"></i> Free Image Resizer: Resize Photos & Reduce Image Size Online</h1>
+    <div class="header-top">
+        <h1><i class="fas fa-arrows-alt-h"></i> Free Image Resizer: Resize Photos & Reduce Image Size Online</h1>
+    </div>
     <div class="subhead"><i class="fas fa-code-branch"></i> resize image online free · reduce image file size · 100% private · no upload</div>
 
     <!-- ===== UPLOAD ===== -->
@@ -249,12 +299,12 @@
 
     <!-- ===== SHARE BUTTONS ===== -->
     <div class="share-buttons">
-        <a href="https://twitter.com/intent/tweet?text=Free%20Image%20Resizer%20-%20Resize%20Photos%20Online&url=https://your-github-username.github.io/image-resizer/" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Share</a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://your-github-username.github.io/image-resizer/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Share</a>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://your-github-username.github.io/image-resizer/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> Share</a>
+        <a href="https://twitter.com/intent/tweet?text=Free%20Image%20Resizer%20-%20Resize%20Photos%20Online&url=https://studentinlifeonceandalways-afk.github.io/image_resizer/" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Share</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://studentinlifeonceandalways-afk.github.io/image_resizer/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Share</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://studentinlifeonceandalways-afk.github.io/image_resizer/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> Share</a>
     </div>
 
-    <!-- ===== SEO KEYWORD CLOUD ===== -->
+    <!-- ===== KEYWORD CLOUD ===== -->
     <div class="keyword-cloud">
         <span>image resizer</span> <span>photo resizer</span> <span>reduce image size</span> <span>resize image online</span>
         <span>resize photo for instagram</span> <span>passport photo editor</span> <span>change image size</span>
@@ -264,7 +314,7 @@
     </div>
 
     <!-- ========================================================== -->
-    <!-- ===== SEO CONTENT: How to Use, FAQ, Benefits ===== -->
+    <!-- ===== SEO CONTENT ===== -->
     <!-- ========================================================== -->
     <div class="seo-content">
         <h2>How to Resize an Image Online for Free</h2>
@@ -346,10 +396,86 @@
 </div>
 
 <!-- ========================================================== -->
-<!-- ===== JAVASCRIPT — TOOL FUNCTIONALITY ===== -->
+<!-- ===== JAVASCRIPT — TOOL + LIVE COUNTER ===== -->
 <!-- ========================================================== -->
 <script>
     (function() {
+        // ===== LIVE USER COUNTER =====
+        const COUNTER_KEY = 'image_resizer_session_id';
+        const COUNTER_STORAGE_KEY = 'image_resizer_active_users';
+        const SESSION_TIMEOUT = 60000; // 60 seconds
+
+        let currentUserCount = 1;
+        let sessionId = localStorage.getItem(COUNTER_KEY);
+        if (!sessionId) {
+            sessionId = 'user_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            localStorage.setItem(COUNTER_KEY, sessionId);
+        }
+
+        // Get or initialize user count
+        let storedCount = localStorage.getItem(COUNTER_STORAGE_KEY);
+        if (storedCount) {
+            currentUserCount = parseInt(storedCount, 10) || 1;
+        } else {
+            currentUserCount = 1;
+            localStorage.setItem(COUNTER_STORAGE_KEY, String(currentUserCount));
+        }
+
+        // Update counter display
+        const userCountEl = document.getElementById('userCount');
+        function updateCounterDisplay() {
+            userCountEl.textContent = currentUserCount;
+        }
+        updateCounterDisplay();
+
+        // Simulate "active users" — increment when a new session is detected
+        // We use a simple heartbeat to keep the session alive
+        function heartbeat() {
+            const now = Date.now();
+            const lastHeartbeat = localStorage.getItem('image_resizer_last_heartbeat');
+            const storedSession = localStorage.getItem(COUNTER_KEY);
+
+            if (storedSession === sessionId) {
+                // This is the same session, just update timestamp
+                localStorage.setItem('image_resizer_last_heartbeat', String(now));
+            } else {
+                // New session detected — increment counter
+                currentUserCount = Math.min(999, currentUserCount + 1);
+                localStorage.setItem(COUNTER_STORAGE_KEY, String(currentUserCount));
+                localStorage.setItem(COUNTER_KEY, sessionId);
+                localStorage.setItem('image_resizer_last_heartbeat', String(now));
+                updateCounterDisplay();
+            }
+
+            // Clean up stale sessions (if any) — we can't reliably detect closed tabs,
+            // but we can decrement if a session hasn't checked in for a while
+            // For simplicity, we'll just keep the counter as a "peak" or "estimated" live users
+            // In a real implementation, you'd use a server-side solution.
+            // For this client-side version, we'll use a decay mechanism:
+            // If more than 2 minutes since last update, reset to 1.
+            const lastUpdate = localStorage.getItem('image_resizer_last_heartbeat');
+            if (lastUpdate && (now - parseInt(lastUpdate, 10)) > 120000) {
+                // No activity for 2 minutes — reset counter (assuming single user)
+                currentUserCount = 1;
+                localStorage.setItem(COUNTER_STORAGE_KEY, String(currentUserCount));
+                updateCounterDisplay();
+            }
+        }
+
+        // Initial heartbeat
+        localStorage.setItem('image_resizer_last_heartbeat', String(Date.now()));
+
+        // Heartbeat every 30 seconds
+        setInterval(heartbeat, 30000);
+
+        // Also heartbeat on visibility change (tab focus)
+        document.addEventListener('visibilitychange', function() {
+            if (!document.hidden) {
+                heartbeat();
+            }
+        });
+
+        // ===== TOOL FUNCTIONALITY =====
         // DOM refs
         const fileInput = document.getElementById('fileInput');
         const uploadZone = document.getElementById('uploadZone');
@@ -404,7 +530,6 @@
                     }
                     placeholder.style.display = 'none';
                     previewImg.style.display = 'block';
-                    // Update alt text for SEO
                     previewImg.alt = 'Preview of ' + file.name + ' for image resizing';
                 };
                 img.src = dataURL;
@@ -513,7 +638,7 @@
             widthInput.value = Math.min(8000, Math.max(1, newWidth));
         }
 
-        // ===== EVENT BINDING =====
+        // Event binding
         uploadZone.addEventListener('click', function(e) { if (e.target.tagName !== 'INPUT') fileInput.click(); });
         uploadZone.addEventListener('dragover', function(e) { e.preventDefault(); uploadZone.style.background = '#dceaff'; });
         uploadZone.addEventListener('dragleave', function(e) { e.preventDefault(); uploadZone.style.background = '#f1f8fe'; });
